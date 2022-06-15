@@ -9,10 +9,8 @@ namespace ServiceBusManagementConsole
 {
     class ManagementHelper
     {
-
         
         private ManagementClient m_ManagementClient;
-
         public ManagementHelper(string connectionString)
         {
             // Using the specified credentials.
@@ -20,8 +18,7 @@ namespace ServiceBusManagementConsole
 
         }
 
-
-
+        
         public async Task CreateQueueAsync(string queuePath)
         {
             Console.Write("Creating queue {0}...", queuePath);
